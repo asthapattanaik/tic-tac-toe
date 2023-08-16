@@ -1,12 +1,12 @@
 <div class="outer-cont">
-  <img *ngIf="freshPage" src="../assets/images/tom1" />
+ 
   <h2 *ngIf="freshPage">Let's play Tic-Tac-Toe!</h2>
   <h1 *ngIf="!winner && !isDraw && !freshPage">
     Current Player : {{ player }}
   </h1>
-  <img *ngIf="winner" src="../assets/images/tom3.png"  class = "monkey">
+
   <h2 *ngIf="winner">Player {{ winner }} won!</h2>
-  <img *ngIf="isDraw" src="../assets/images/tom2.png"  class = "monkey">
+
   <h2 *ngIf="isDraw">It's a tie!</h2>
   <button (click)="newGame()" *ngIf = "winner || isDraw || freshPage">Start Game</button>
 
